@@ -22,16 +22,13 @@ tags:
 
 
 - Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
-"hackthebox"
-
-![Test Relative Image](./imagen.png)
+"hackthebox": ![Test Relative Image](./imagen.png)
 
 
 
 - Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y 
 me dice que no soy un real fantasma dando a entender que la contrasena no es 
 correcta:
-
 ![Test Relative Image](./imagen2.png)
 
 
