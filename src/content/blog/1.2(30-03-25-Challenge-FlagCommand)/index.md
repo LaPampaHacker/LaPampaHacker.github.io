@@ -11,44 +11,37 @@ tags:
 ---
 ### Paso a paso:
 
-```js
-Me conecto a la VPN y prendo el challenge
-```
+<div style="height: 5px;"></div>
 
+- Me conecto a la VPN y prendo el challenge.
 
-```js
-Copio la IP web que me dieron y la abro:
-```
+<div style="height: 5px;"></div>
+
+- Copio la IP web que me dieron y la abro:
 ![Test Relative Image](./imagen.png)
 
+<div style="height: 5px;"></div>
 
-```js
-Pongo start
-```
+- Pongo start.
 
+<div style="height: 5px;"></div>
 
-```js
-Al jugar y ver que no llegaba a ninguna parte uso Ctrl + Shift + C
-```
+- Al jugar y ver que no llegaba a ninguna parte uso Ctrl + Shift + C.
 
+<div style="height: 5px;"></div>
 
-```js
-Analizo las peticiones red
-```
+- Analizo las peticiones red.
 
+<div style="height: 5px;"></div>
 
-```js
-Entro a la petición options
-```
+- Entro a la petición options.
 
+<div style="height: 5px;"></div>
 
-```js
-Y veo un comando secreto:
-```
+- Y veo un comando secreto:
 ![Test Relative Image](./imagen2.png)
 
+<div style="height: 5px;"></div>
 
-```js
-inicio el juego y pego el comando secreto y me da como respuesta la flag:
-```
+- Inicio el juego y pego el comando secreto y me da como respuesta la flag:
 ![Test Relative Image](./imagen3.png)

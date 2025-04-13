@@ -13,46 +13,43 @@ tags:
 
 
 
-- Descargo el archivo .zip que me dan para el ejercicio
+- Descargo el archivo .zip que me dan para el ejercicio.
 
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
 
-- Lo muevo a mi carpeta de trabajo
+- Lo muevo a mi carpeta de trabajo.
 
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
 
 - Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
-"hackthebox": ![Test Relative Image](./imagen.png)
+    "hackthebox": 
+    ![Test Relative Image](./imagen.png)
 
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
 
 - Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y 
-me dice que no soy un real fantasma dando a entender que la contrasena no es 
-correcta:
+    me dice que no soy un real fantasma dando a entender que la contrasena no es 
+    correcta:
 ![Test Relative Image](./imagen2.png)
 
+<div style="height: 5px;"></div>
 
-```js
-Ejecuto ltrace para ver a que compra la contraseña que puse:
-```
+- Ejecuto ltrace para ver a que compra la contraseña que puse:
 ![Test Relative Image](./imagen3.png)
 
+<div style="height: 5px;"></div>
 
-```js
-Ejecuto nuevamente y pongo la contrasena correcta y me dice nuevamente contrasena 
-erronea:
-```
+- Ejecuto nuevamente y pongo la contrasena correcta y me dice nuevamente contrasena 
+    erronea:
 ![Test Relative Image](./imagen4.png)
 
+<div style="height: 5px;"></div>
 
-```js
-Le aplicxo una strings para ver elcodigo y veo que por alguna razon se le escapaba 
-un "5" a la contrasena:
-```
+- Le aplicxo una strings para ver elcodigo y veo que por alguna razon se le escapaba 
+    un "5" a la contrasena:
 ![Test Relative Image](./imagen5.png)
 
+<div style="height: 5px;"></div>
 
-```js
-Ejecuto nuevamente y pongo la contrasena correcta y me da la flag:
-```
+- Ejecuto nuevamente y pongo la contrasena correcta y me da la flag:
 ![Test Relative Image](./imagen6.png)
