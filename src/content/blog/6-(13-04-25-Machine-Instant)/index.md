@@ -1,7 +1,7 @@
 ---
 title: "Astro Sphere: Adding a new post or project."
 summary: "Adding a new article (blog post or project) is pretty easy."
-date: "Abr 13 2025"
+date: "2025-04-13"
 draft: false
 tags:
 - Tutorial

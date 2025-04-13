@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Machine Cap"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo la maquina:"
-date: "Mar 03 2025"
+date: "2025-03-29"
 draft: false
 tags:
 - Tutorial
