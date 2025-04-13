@@ -1,12 +1,13 @@
 ---
 title: "Astro Sphere: Getting Started"
 summary: "You've downloaded and installed the project. Let's hit the ground running."
-date: "Mar 16 2024"
+date: "Abr 11 2025"
 draft: false
 tags:
 - Tutorial
-- Astro
-- Astro Sphere
+- HackTheBox
+- Machines
+- Linux
 ---
 
 Astro Sphere is designed to be configurable. This article will cover the basics on

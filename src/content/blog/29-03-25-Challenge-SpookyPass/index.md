@@ -1,12 +1,13 @@
 ---
-title: "Astro Sphere: Adding a new post or project."
-summary: "Adding a new article (blog post or project) is pretty easy."
-date: "Mar 14 2024"
+title: "HackTheBox - Challenge SpookyPass"
+summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
+date: "Mar 29 2025"
 draft: false
 tags:
 - Tutorial
-- Astro
-- Astro Sphere
+- HackTheBox
+- Challenge
+- Reversing
 ---
 ### Basics
 

@@ -1,13 +1,13 @@
 ---
 title: "Astro Sphere: Writing Markdown"
 summary: "Basic Markdown syntax that can be used when writing Markdown content in Astro Sphere."
-date: "Mar 13 2024"
+date: "Abr 09 2025"
 draft: false
 tags:
 - Tutorial
-- Astro
-- Astro Sphere
-- Markdown
+- HackTheBox
+- Machines
+- Raspberry pi
 ---
 
 ### Headings
