@@ -10,22 +10,20 @@ tags:
 - Reversing
 ---
 ### Paso a paso:
+<div style="margin-bottom: 2rem;">
 
 ```js
 Descargo el archivo .zip que me dan para el ejercicio
-```
 
-<div style="margin-bottom: 1.5rem;">
+</div> <div style="margin-bottom: 2rem;">
 
-```js
 Lo muevo a mi carpeta de trabajo
-```
 
+</div> <div style="margin-bottom: 2rem;">
 
-```js
 Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
 "hackthebox"
-```
+</div> ```
 ![Test Relative Image](./imagen.png)
 
 
