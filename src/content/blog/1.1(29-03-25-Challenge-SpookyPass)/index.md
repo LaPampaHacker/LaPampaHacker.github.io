@@ -9,42 +9,52 @@ tags:
 - Challenge
 - Reversing
 ---
-### Basics
+### Paso a paso:
 
-Paso a paso:
 ```js
-Descargo el archivo .zip que me dan para el ejercicio:
+Descargo el archivo .zip que me dan para el ejercicio
 ```
 
-```js
-Lo muevo a mi carpeta de trabajo:
-```
 
 ```js
-Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser "hackthebox":
+Lo muevo a mi carpeta de trabajo
+```
+
+
+```js
+Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
+"hackthebox"
 ```
 ![Test Relative Image](./imagen.png)
 
+
 ```js
-Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y me dice 
-que no soy un real fantasma dando a entender que la contrasena no es correcta:
+Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y 
+me dice que no soy un real fantasma dando a entender que la contrasena no es 
+correcta:
 ```
 ![Test Relative Image](./imagen2.png)
+
 
 ```js
 Ejecuto ltrace para ver a que compra la contraseña que puse:
 ```
 ![Test Relative Image](./imagen3.png)
 
+
 ```js
-Ejecuto nuevamente y pongo la contrasena correcta y me dice nuevamente contrasena erronea:
+Ejecuto nuevamente y pongo la contrasena correcta y me dice nuevamente contrasena 
+erronea:
 ```
 ![Test Relative Image](./imagen4.png)
 
+
 ```js
-Le aplicxo una strings para ver elcodigo y veo que por alguna razon se le escapaba un ""5 a la contrasena:
+Le aplicxo una strings para ver elcodigo y veo que por alguna razon se le escapaba 
+un ""5 a la contrasena:
 ```
 ![Test Relative Image](./imagen5.png)
+
 
 ```js
 Ejecuto nuevamente y pongo la contrasena correcta y me da la flag:

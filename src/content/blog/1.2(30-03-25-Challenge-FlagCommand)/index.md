@@ -9,38 +9,44 @@ tags:
 - Challenge
 - Web
 ---
-### Basics
+### Paso a paso:
 
-Paso a paso:
 ```js
-Me conecto a la VPN y prendo el challenge:
+Me conecto a la VPN y prendo el challenge
 ```
+
 
 ```js
 Copio la IP web que me dieron y la abro:
 ```
 ![Test Relative Image](./imagen.png)
 
-```js
-Pongo start:
-```
 
 ```js
-Al jugar y ver que no llegaba a ninguna parte uso Ctrl + Shift + C:
+Pongo start
 ```
 
-```js
-Analizo las peticiones red :
-```
 
 ```js
-Entro a la petición options:
+Al jugar y ver que no llegaba a ninguna parte uso Ctrl + Shift + C
 ```
+
+
+```js
+Analizo las peticiones red
+```
+
+
+```js
+Entro a la petición options
+```
+
 
 ```js
 Y veo un comando secreto:
 ```
 ![Test Relative Image](./imagen2.png)
+
 
 ```js
 inicio el juego y pego el comando secreto y me da como respuesta la flag:
