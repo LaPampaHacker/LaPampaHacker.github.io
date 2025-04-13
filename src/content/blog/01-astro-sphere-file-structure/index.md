@@ -17,5 +17,7 @@ para poder corroborar que tenemos conexión :
 
 <img src="public/images/imagen.png" alt="Descripción de la imagen">
 
+Como el ttl es 63 podríamos decir que es una maquina Linux ya que:
+
 
 ```
