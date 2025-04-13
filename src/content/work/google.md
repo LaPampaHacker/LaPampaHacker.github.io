@@ -1,12 +1,12 @@
 ---
-company: "Google"
-role: "Staff Software Engineer"
-dateStart: "11/27/2022"
+company: "Instituto Escuela Superior de Buenos Aires"
+role: "Tecnicatura Superior en Ciberseguridad"
+dateStart: "03/17/2025"
 dateEnd: "Now"
 ---
 
-Sit amet consectetur adipisicing elit. Iure illo neque tempora, voluptatem est quaerat voluptas praesentium ipsa dolorem dignissimos nulla ratione distinctio quae maiores eligendi nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor.
+Especialista en ciberseguridad ofensiva y defensiva. Análisis de vulnerabilidades, gestión de incidentes y arquitectura segura son parte del entorno profesional. Con experiencia en herramientas como Wireshark, Metasploit y Splunk, se adapta a entornos críticos garantizando la integridad, disponibilidad y confidencialidad de los datos.
 
-- Aadipisicing elit. Iure illo neque tempora, voluptatem est.
-- dolorem dignissimos nulla ratione.
-- Quibusdam, debitis voluptatum, lorem ipsum dolor.
+- Especializado en redes corporativas y protección de infraestructura. Diagnóstico, mitigación de amenazas y aplicación de políticas de seguridad.
+- Cumple con normativas como ISO/IEC 27001 y el Esquema Nacional de Seguridad.
+- Firewall, SIEM, hardening, mitigación de exploits. Respuesta ante incidentes, ingeniería social y auditorías técnicas forman parte del día a día.
