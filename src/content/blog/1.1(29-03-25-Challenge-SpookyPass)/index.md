@@ -15,6 +15,7 @@ tags:
 Descargo el archivo .zip que me dan para el ejercicio
 ```
 
+<div style="margin-bottom: 1.5rem;">
 
 ```js
 Lo muevo a mi carpeta de trabajo
