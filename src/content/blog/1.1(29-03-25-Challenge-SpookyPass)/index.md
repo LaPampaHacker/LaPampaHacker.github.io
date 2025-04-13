@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Challenge SpookyPass"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
-date: "2025-03-29"
+date: "2025-03-30"
 draft: false
 tags:
 - Tutorial

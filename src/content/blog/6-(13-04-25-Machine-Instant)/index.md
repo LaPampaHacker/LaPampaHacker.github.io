@@ -1,6 +1,6 @@
 ---
-title: "Astro Sphere: Adding a new post or project."
-summary: "Adding a new article (blog post or project) is pretty easy."
+title: "HackTheBox - Machine Instant"
+summary: "Vamos a ver el paso a paso detallado de como ir resolviendo la maquina:"
 date: "2025-04-13"
 draft: false
 tags:

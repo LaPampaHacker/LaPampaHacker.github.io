@@ -1,7 +1,7 @@
 ---
-title: "Machine Mirai"
+title: "HackTheBox - Machine Jerry"
 date: "2025-04-09"
-summary: "Resolución paso a paso de la máquina Jerry"
+summary: "Vamos a ver el paso a paso detallado de como ir resolviendo la maquina:"
 draft: false
 tags: 
 - Tutorial
