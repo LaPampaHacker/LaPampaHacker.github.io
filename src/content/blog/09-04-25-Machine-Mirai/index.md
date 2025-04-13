@@ -1,13 +1,9 @@
 ---
-title: "Astro Sphere: Writing Markdown"
-summary: "Basic Markdown syntax that can be used when writing Markdown content in Astro Sphere."
-date: "Abr 09 2025"
+title: "Machine Mirai"
+date: "2025-04-09"
+summary: "Resolución paso a paso de la máquina Mirai"
+tags: ["Tutorial", "HackTheBox", "Machines", "Raspberry pi"]
 draft: false
-tags:
-- Tutorial
-- HackTheBox
-- Machines
-- Raspberry pi
 ---
 
 ### Headings
