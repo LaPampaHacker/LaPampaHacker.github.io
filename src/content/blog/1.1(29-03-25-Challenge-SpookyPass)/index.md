@@ -15,16 +15,16 @@ tags:
 
 - Descargo el archivo .zip que me dan para el ejercicio
 
-
+<div style="height: 20px;"></div>
 
 - Lo muevo a mi carpeta de trabajo
 
-
+<div style="height: 20px;"></div>
 
 - Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
 "hackthebox": ![Test Relative Image](./imagen.png)
 
-
+<div style="height: 20px;"></div>
 
 - Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y 
 me dice que no soy un real fantasma dando a entender que la contrasena no es 
