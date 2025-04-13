@@ -2,8 +2,12 @@
 title: "Machine Mirai"
 date: "2025-04-09"
 summary: "Resolución paso a paso de la máquina Mirai"
-tags: ["Tutorial", "HackTheBox", "Machines", "Raspberry pi"]
 draft: false
+tags: 
+- Tutorial
+- HackTheBox
+- Machines
+- Raspberry pi
 ---
 
 ### Headings

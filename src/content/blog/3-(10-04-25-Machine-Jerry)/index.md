@@ -1,9 +1,9 @@
 ---
-title: "Astro Sphere: Social media links"
-summary: "A quick tutorial on how to change, add or remove social media links"
-date: "Abr 10 2025"
+title: "Machine Mirai"
+date: "2025-04-09"
+summary: "Resolución paso a paso de la máquina Jerry"
 draft: false
-tags:
+tags: 
 - Tutorial
 - HackTheBox
 - Machines

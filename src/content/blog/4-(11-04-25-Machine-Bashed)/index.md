@@ -1,9 +1,9 @@
 ---
-title: "Astro Sphere: Getting Started"
-summary: "You've downloaded and installed the project. Let's hit the ground running."
-date: "Abr 11 2025"
+title: "Machine Bashed"
+date: "2025-04-11"
+summary: "Resolución paso a paso de la máquina Bashed"
 draft: false
-tags:
+tags: 
 - Tutorial
 - HackTheBox
 - Machines
