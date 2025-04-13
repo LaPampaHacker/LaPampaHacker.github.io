@@ -12,26 +12,26 @@ tags:
 ### Paso a paso:
 
 
-```js
-Descargo el archivo .zip que me dan para el ejercicio
-```
 
-```js
-Lo muevo a mi carpeta de trabajo
-```
+- Descargo el archivo .zip que me dan para el ejercicio
 
-```js
-Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
+
+
+- Lo muevo a mi carpeta de trabajo
+
+
+
+- Y lo descomprimo usando unzip, acordarse que la contrasena siempre va a ser 
 "hackthebox"
-```
+
 ![Test Relative Image](./imagen.png)
 
 
-```js
-Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y 
+
+- Entro a la carpeta y ejecuto el script que hay y me pide escribir una contrasena y 
 me dice que no soy un real fantasma dando a entender que la contrasena no es 
 correcta:
-```
+
 ![Test Relative Image](./imagen2.png)
 
 
@@ -50,7 +50,7 @@ erronea:
 
 ```js
 Le aplicxo una strings para ver elcodigo y veo que por alguna razon se le escapaba 
-un ""5 a la contrasena:
+un "5" a la contrasena:
 ```
 ![Test Relative Image](./imagen5.png)
 
