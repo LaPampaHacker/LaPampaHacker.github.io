@@ -5,8 +5,8 @@ date: "Mar 03 2025"
 draft: false
 tags:
 - Tutorial
-- Astro
-- Astro Sphere
+- HackTheBox
+- Machines
 ---
 
 Paso a paso:
