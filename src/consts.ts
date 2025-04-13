@@ -4,7 +4,7 @@ import type { Site, Page, Links, Socials } from "@types"
 export const SITE: Site = {
   TITLE: "LaPampaHacker",
   DESCRIPTION: "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
-  AUTHOR: "Mark Horn",
+  AUTHOR: "Joaquin Hernandez",
 }
 
 // Work Page
