@@ -3,7 +3,7 @@ title: "Política de Privacidad"
 date: "04/14/2025"
 ---
 
-Esta Política de Privacidad describe cómo Nosotros recopilamos, utilizamos, mantenemos y divulgamos la información de los usuarios del sitio web [\[URL de tu sitio\]](https://lapampahacker.github.io/). Esta política aplica al Sitio y a todos los productos y servicios ofrecidos por La empresa.
+Esta Política de Privacidad describe cómo Nosotros recopilamos, utilizamos, mantenemos y divulgamos la información de los usuarios del sitio web [\[lapampahacker.github.io\]](https://lapampahacker.github.io/). Esta política aplica al Sitio y a todos los productos y servicios ofrecidos por La empresa.
 
 #### Información de identificación personal
 Podemos recopilar información de identificación personal de los Usuarios de diversas formas, incluyendo, entre otras, cuando los Usuarios visitan nuestro sitio, se registran, realizan un pedido, completan un formulario o interactúan con otros servicios, actividades o recursos que ponemos a disposición. La información recopilada puede incluir nombre, dirección de correo electrónico, dirección postal, número de teléfono, y otra información según sea necesario. Los Usuarios pueden visitar el Sitio de forma anónima. Solo recopilaremos información de identificación personal si el Usuario la proporciona voluntariamente.
@@ -26,7 +26,7 @@ Adoptamos prácticas apropiadas de recolección, almacenamiento y procesamiento 
 #### Compartir su información personal
 No vendemos, intercambiamos ni alquilamos información de identificación personal de los Usuarios a terceros. Podemos compartir información demográfica genérica no vinculada a ninguna información de identificación personal con nuestros socios comerciales, afiliados confiables y anunciantes para los fines antes mencionados. También podemos compartir información con terceros proveedores de servicios para ayudarnos a operar el Sitio o administrar actividades en nuestro nombre, como el envío de boletines electrónicos o encuestas, siempre bajo acuerdos de confidencialidad.
 
-#### Changes to this privacy policy
+#### Cambios a esta Política de Privacidad
 Nosotros nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Recomendamos a los Usuarios revisar frecuentemente esta página para mantenerse informados sobre cómo estamos protegiendo la información que recopilamos. Usted reconoce y acepta que es su responsabilidad revisar esta política periódicamente y conocer las modificaciones.
 
 #### Aceptación de estos términos

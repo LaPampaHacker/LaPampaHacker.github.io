@@ -3,7 +3,7 @@ title: "Términos de Uso"
 date: "04/14/2025"
 ---
 
-Por favor, lea detenidamente estos Términoss de Uso antes de utilizar el sitio web [\[URL de tu sitio\]](https://lapampahacker.github.io/) operado por Nosotros.
+Por favor, lea detenidamente estos Términoss de Uso antes de utilizar el sitio web [\[lapampahacker.github.io\]](https://lapampahacker.github.io/) operado por Nosotros.
 
 #### Aceptación de los Términos
 Al acceder o utilizar este sitio web, usted acepta quedar legalmente vinculado por estos Términos de Uso, así como por todas las leyes y regulaciones aplicables. Si no está de acuerdo con alguno de estos términos, por favor absténgase de utilizar este sitio.
