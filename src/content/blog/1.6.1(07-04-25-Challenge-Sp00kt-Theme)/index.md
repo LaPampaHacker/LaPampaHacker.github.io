@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Challenge Sp00kt Theme"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
-date: "2025-04-07"
+date: "2025-04-03"
 draft: false
 tags:
 - Tutorial

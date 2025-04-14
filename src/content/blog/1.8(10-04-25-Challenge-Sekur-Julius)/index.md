@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Challenge Sekur Julius"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
-date: "2025-04-10"
+date: "2025-04-05"
 draft: false
 tags:
 - Tutorial
