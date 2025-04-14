@@ -9,6 +9,7 @@ tags:
 - Challenge
 - Web
 ---
+
 ### Paso a paso:
 
 
@@ -32,12 +33,12 @@ tags:
 <div style="height: 5px;"></div>
 
 - Entro al archivo y empiezo a mirar:
-![Test Relative Image](./imagen3.png)
+    ![Test Relative Image](./imagen3.png)
 
 <div style="height: 5px;"></div>
 
 - En dockerfile veo que me dice que la flag esta en el directorio /flag.txt:
-![Test Relative Image](./imagen4.png)
+    ![Test Relative Image](./imagen4.png)
 
 <div style="height: 5px;"></div>
 
@@ -70,4 +71,4 @@ tags:
 <div style="height: 5px;"></div>
 
 - Y descubro la flag:
-![Test Relative Image](./imagen5.png)
+    ![Test Relative Image](./imagen5.png)

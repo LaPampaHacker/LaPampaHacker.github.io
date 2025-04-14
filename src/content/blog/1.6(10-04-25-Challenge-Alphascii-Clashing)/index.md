@@ -2,87 +2,69 @@
 title: "HackTheBox - Challenge Alphascii Clashing"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
 date: "2025-04-07"
-draft: true
+draft: false
 tags:
 - Tutorial
 - HackTheBox
 - Challenge
 - Crypto
 ---
-### Basics
 
-Create a folder in the respective collection you wish to create content. The name of the folder will be the slug in which your content will be found.
+### Paso a paso:
 
-```text
-creating the following
 
-/content/blog/my-new-post/index.md
+- Entro a la web usando nestat en la terminal:
+    ![Test Relative Image](./imagen.png)
 
-will be published to
+<div style="height: 5px;"></div>
 
-https://yourdomain.com/blog/my-new-post
+- Descargo y descomprimo el archivo, la contrasena como siempre es "hackthebox".
 
-```
+<div style="height: 5px;"></div>
 
-### Frontmatter
+- Veo el código de server.py.
 
-Front matter is in yaml if you are familiar with the format. All posts and projects require frontmatter at the top of the document to be imported. All frontmatter must be inside triple dashes, similar to Astro format. See example below.
+<div style="height: 5px;"></div>
 
-### Blog Collection
+- Y encuentro a usuario logeados:
+    ![Test Relative Image](./imagen2.png)
+    
+<div style="height: 5px;"></div>
 
-| Field   | Type    | Req? | Description                                                   |
-| :------ | :------ | :--- | :------------------------------------------------------------ |
-| title   | string  | yes  | Title of the post. Used in SEO.                               |
-| summary | string  | yes  | Short description of the post. Used in SEO.                   |
-| date    | string  | yes  | Any string date that javascript can convert. Used in sorting  |
-| tags    | array   | yes  | Post topic. Array of strings. Used in filtering.              |
-| draft   | boolean | no   | Hides the post from collections. Unpublished entry.           |
+- Veo q puedo logearme yo con {"option": "login"}:
+    ![Test Relative Image](./imagen3.png)
 
-Example blog post frontmatter
+<div style="height: 5px;"></div>
 
-```yaml
----
-title: "Astro Sphere: Adding a new post or project."
-summary: "Adding a new article (blog post or project) is pretty easy."
-date: "Mar 18 2024"
-draft: false
-tags:
-- Tutorial
-- Astro
-- Astro Sphere
----
-```
+- Ademas veo que puedo crear usuarios:
+    ![Test Relative Image](./imagen4.png)
 
-### Projects Collection (extends Blog Collection)
+<div style="height: 5px;"></div>
 
-| Field   | Type    | Req? | Description                                                   |
-| :------ | :------ | :--- | :------------------------------------------------------------ |
-| title   | string  | yes  | Title of the post. Used in SEO.                               |
-| summary | string  | yes  | Short description of the post. Used in SEO.                   |
-| date    | string  | yes  | Any string date that javascript can convert. Used in sorting  |
-| tags    | array   | yes  | Post topic. Array of strings. Used in filtering.              |
-| draft   | boolean | no   | Hides the post from collections. Unpublished entry.           |
-| demoUrl | string  | no   | A link to the deployed project, if applicable.                |
-| repoUrl | string  | no   | A link to the repository, if applicable.                      |
+- Y puedo ver que puedo acceder a la flag:
+    ![Test Relative Image](./imagen5.png)
 
-Example project frontmatter
+<div style="height: 5px;"></div>
 
-```yaml
----
-title: "Astro Sphere"
-summary: "Astro Sphere, a portfolio and blog for designers and developers."
-date: "Mar 18 2024"
-draft: false
-tags:
-- Astro
-- Typescript
-- Javascript
-- Tailwind
-- SolidJS
-demoUrl: https://astro-sphere.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
----
-```
+- Lo que veo también es que hay una colisión de hashes.
 
-### Write your content
-You've made it this far, all that is left to do is write your content beneath the frontmatter. Writing markdown will be covered in the next article.
+<div style="height: 5px;"></div>
+
+- Por lo que busco hashes que tengan colisión:
+    ![Test Relative Image](./imagen6.png)
+
+<div style="height: 5px;"></div>
+
+- Y compruebo que tiene los mismo hashes:
+    ![Test Relative Image](./imagen7.png)
+
+<div style="height: 5px;"></div>
+
+- Los registro a ambos:
+    ![Test Relative Image](./imagen8.png)
+    ![Test Relative Image](./imagen9.png)
+
+<div style="height: 5px;"></div>
+
+- Y al entrar con el ultimo y haber una colisión de hashes me devuelve la flags:
+    ![Test Relative Image](./imagen10.png)

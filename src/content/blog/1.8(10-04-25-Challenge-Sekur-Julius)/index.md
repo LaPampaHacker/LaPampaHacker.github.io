@@ -2,87 +2,53 @@
 title: "HackTheBox - Challenge Sekur Julius"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
 date: "2025-04-10"
-draft: true
+draft: false
 tags:
 - Tutorial
 - HackTheBox
 - Challenge
 - Crypto
 ---
-### Basics
 
-Create a folder in the respective collection you wish to create content. The name of the folder will be the slug in which your content will be found.
+### Paso a paso:
 
-```text
-creating the following
+- Descargo y descomprimo el archivo, la contrasena como siempre es "hackthebox".
 
-/content/blog/my-new-post/index.md
+<div style="height: 5px;"></div>
 
-will be published to
+- Hago un cat del .txt:
+    ![Test Relative Image](./imagen.png)
 
-https://yourdomain.com/blog/my-new-post
+<div style="height: 5px;"></div>
 
+- Cambio los 0 por espacios:
+    ![Test Relative Image](./imagen2.png)
+
+<div style="height: 5px;"></div>
+
+- Veo que "GUR" se repite asique le cambio de color para verlo mejor:
+    ![Test Relative Image](./imagen3.png)
+
+<div style="height: 5px;"></div>
+
+- Parece ser un cifrado cesar entonces veo eso y muestro cual seria el proceso para llegar:
+    ![Test Relative Image](./imagen4.png)  
+    
+<div style="height: 5px;"></div>
+
+- Y lo pruebo con el .txt:
+    ![Test Relative Image](./imagen5.png)
+
+<div style="height: 5px;"></div>
+
+- Y ahi esta la flag:
+```js
+WELCOME TO HACKTHEBOO TWOTHOUSANDTWENTYFOUR! THIS IS A PROOF OF CONCEPT TO PROVE YOU THAT THE CAESAR CIPHER IS INSECURE NO MATTER HOW MANY TIMES YOU APPLY IT. THE SECURITY OF A THOUSAND DISTINCT SHIFTS IS EVENTUALLY THE SAME AS THAT OF A SINGLE SHIFT. ENOUGH MUMBLING, TAKE YOUR FLAG AND ENJOY THE REST OF THE CONTEST. MAKE SURE YOU WRAP THE FOLLOWING TEXT WITH THE HTB FLAG FORMAT THEEFFECTIVEKEYSPACEOFCAESARDEPENDSONTHESIZEOFTHEALPHABET.%  
 ```
 
-### Frontmatter
+<div style="height: 5px;"></div>
 
-Front matter is in yaml if you are familiar with the format. All posts and projects require frontmatter at the top of the document to be imported. All frontmatter must be inside triple dashes, similar to Astro format. See example below.
-
-### Blog Collection
-
-| Field   | Type    | Req? | Description                                                   |
-| :------ | :------ | :--- | :------------------------------------------------------------ |
-| title   | string  | yes  | Title of the post. Used in SEO.                               |
-| summary | string  | yes  | Short description of the post. Used in SEO.                   |
-| date    | string  | yes  | Any string date that javascript can convert. Used in sorting  |
-| tags    | array   | yes  | Post topic. Array of strings. Used in filtering.              |
-| draft   | boolean | no   | Hides the post from collections. Unpublished entry.           |
-
-Example blog post frontmatter
-
-```yaml
----
-title: "Astro Sphere: Adding a new post or project."
-summary: "Adding a new article (blog post or project) is pretty easy."
-date: "Mar 18 2024"
-draft: false
-tags:
-- Tutorial
-- Astro
-- Astro Sphere
----
+- Escribo la flag en el formato corresponfiente:
+```js
+HTB{THEEFFECTIVEKEYSPACEOFCAESARDEPENDSONTHESIZEOFTHEALPHABET}
 ```
-
-### Projects Collection (extends Blog Collection)
-
-| Field   | Type    | Req? | Description                                                   |
-| :------ | :------ | :--- | :------------------------------------------------------------ |
-| title   | string  | yes  | Title of the post. Used in SEO.                               |
-| summary | string  | yes  | Short description of the post. Used in SEO.                   |
-| date    | string  | yes  | Any string date that javascript can convert. Used in sorting  |
-| tags    | array   | yes  | Post topic. Array of strings. Used in filtering.              |
-| draft   | boolean | no   | Hides the post from collections. Unpublished entry.           |
-| demoUrl | string  | no   | A link to the deployed project, if applicable.                |
-| repoUrl | string  | no   | A link to the repository, if applicable.                      |
-
-Example project frontmatter
-
-```yaml
----
-title: "Astro Sphere"
-summary: "Astro Sphere, a portfolio and blog for designers and developers."
-date: "Mar 18 2024"
-draft: false
-tags:
-- Astro
-- Typescript
-- Javascript
-- Tailwind
-- SolidJS
-demoUrl: https://astro-sphere.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
----
-```
-
-### Write your content
-You've made it this far, all that is left to do is write your content beneath the frontmatter. Writing markdown will be covered in the next article.
