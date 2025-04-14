@@ -1,35 +1,28 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content"
+import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
-import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
-import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
+import Blog from "@components/Blog"
+import { BLOG } from "@consts"
 
-// Create the static blog pages
-export async function getStaticPaths() {
-	const posts = await getCollection("blog")
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}))
-}
+const posts = (await getCollection("blog"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
-// Get the requested post
-type Props = CollectionEntry<"blog">
-const post = Astro.props
-const { title, summary } = post.data
+const tags = [...new Set(posts.flatMap(post => post.data.tags))]
+  .sort((a, b) => a.localeCompare(b))
 ---
 
-<PageLayout title={title} description={summary}>
+<PageLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
   <TopLayout>
-    <div class="animate">
-      <ArticleTopLayout entry={post}/>
+    <div class="animate page-heading">
+      {BLOG.TITLE}
     </div>
   </TopLayout>
   <BottomLayout>
     <div class="animate">
-      <ArticleBottomLayout entry={post} />
+      <Blog client:load tags={tags} data={posts} />
     </div>
   </BottomLayout>
 </PageLayout>
