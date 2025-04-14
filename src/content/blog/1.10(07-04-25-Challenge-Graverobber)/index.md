@@ -2,7 +2,7 @@
 title: "HackTheBox - Challenge Graverobber"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
 date: "2025-04-10"
-draft: false
+draft: true
 tags:
 - Tutorial
 - HackTheBox

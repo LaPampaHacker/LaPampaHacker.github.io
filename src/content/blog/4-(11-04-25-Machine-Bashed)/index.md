@@ -2,7 +2,7 @@
 title: "Machine Bashed"
 date: "2025-04-11"
 summary: "Resolución paso a paso de la máquina Bashed"
-draft: false
+draft: true
 tags: 
 - Tutorial
 - HackTheBox

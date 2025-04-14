@@ -2,7 +2,7 @@
 title: "Machine Mirai"
 date: "2025-04-09"
 summary: "Resolución paso a paso de la máquina Mirai"
-draft: false
+draft: true
 tags: 
 - Tutorial
 - HackTheBox

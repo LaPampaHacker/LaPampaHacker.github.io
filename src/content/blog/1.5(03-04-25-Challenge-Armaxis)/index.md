@@ -9,80 +9,142 @@ tags:
 - Challenge
 - Web
 ---
-### Basics
 
-Create a folder in the respective collection you wish to create content. The name of the folder will be the slug in which your content will be found.
+### Paso a paso:
 
-```text
-creating the following
+- Descargo y descomprimo los archivos.
 
-/content/blog/my-new-post/index.md
+<div style="height: 5px;"></div>
 
-will be published to
+- Entro a los dos links q me dieron: 
+    ![Test Relative Image](./imagen.png)
+    ![Test Relative Image](./imagen2.png)
 
-https://yourdomain.com/blog/my-new-post
+<div style="height: 5px;"></div>
 
-```
+- Pruebo registrarme con el mail test@email.htb:
+    ![Test Relative Image](./imagen4.png)
+    
+<div style="height: 5px;"></div>
 
-### Frontmatter
+- Pruebo cambiar la contraseña y me mandan un token:
+    ![Test Relative Image](./imagen3.png)
 
-Front matter is in yaml if you are familiar with the format. All posts and projects require frontmatter at the top of the document to be imported. All frontmatter must be inside triple dashes, similar to Astro format. See example below.
+<div style="height: 5px;"></div>
 
-### Blog Collection
+- Entonces veo desde donde me mandan el mail y pruebo admin@armaxis.htb: 
+    ![Test Relative Image](./imagen4.png)
 
-| Field   | Type    | Req? | Description                                                   |
-| :------ | :------ | :--- | :------------------------------------------------------------ |
-| title   | string  | yes  | Title of the post. Used in SEO.                               |
-| summary | string  | yes  | Short description of the post. Used in SEO.                   |
-| date    | string  | yes  | Any string date that javascript can convert. Used in sorting  |
-| tags    | array   | yes  | Post topic. Array of strings. Used in filtering.              |
-| draft   | boolean | no   | Hides the post from collections. Unpublished entry.           |
+<div style="height: 5px;"></div>
 
-Example blog post frontmatter
+- Veo que el usuario existe y veo de cambiar la contraseña.
 
-```yaml
----
-title: "Astro Sphere: Adding a new post or project."
-summary: "Adding a new article (blog post or project) is pretty easy."
-date: "Mar 18 2024"
-draft: false
-tags:
-- Tutorial
-- Astro
-- Astro Sphere
----
-```
+<div style="height: 5px;"></div>
 
-### Projects Collection (extends Blog Collection)
+- Después veo el código del funcionamiento de cambiar la contraseña.
 
-| Field   | Type    | Req? | Description                                                   |
-| :------ | :------ | :--- | :------------------------------------------------------------ |
-| title   | string  | yes  | Title of the post. Used in SEO.                               |
-| summary | string  | yes  | Short description of the post. Used in SEO.                   |
-| date    | string  | yes  | Any string date that javascript can convert. Used in sorting  |
-| tags    | array   | yes  | Post topic. Array of strings. Used in filtering.              |
-| draft   | boolean | no   | Hides the post from collections. Unpublished entry.           |
-| demoUrl | string  | no   | A link to the deployed project, if applicable.                |
-| repoUrl | string  | no   | A link to the repository, if applicable.                      |
+<div style="height: 5px;"></div>
 
-Example project frontmatter
+- En [[cat]] routes/index.js:
+    ![Test Relative Image](./imagen5.png)
 
-```yaml
----
-title: "Astro Sphere"
-summary: "Astro Sphere, a portfolio and blog for designers and developers."
-date: "Mar 18 2024"
-draft: false
-tags:
-- Astro
-- Typescript
-- Javascript
-- Tailwind
-- SolidJS
-demoUrl: https://astro-sphere.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
----
-```
+<div style="height: 5px;"></div>
 
-### Write your content
-You've made it this far, all that is left to do is write your content beneath the frontmatter. Writing markdown will be covered in the next article.
+- Veo que genera un token pero que no deja de estar activo hasta que se usa.
+
+<div style="height: 5px;"></div>
+
+- Por lo que hago es pedir cambiar la contraseña del mail al que si tengo acceso para que me manden un token:
+    ![Test Relative Image](./imagen6.png)
+
+<div style="height: 5px;"></div>
+
+- Para después pedir cambiar la contraseña del mail admin e introducir el token mío:
+    ![Test Relative Image](./imagen7.png)
+
+<div style="height: 5px;"></div>
+
+- Me deja cambiar la contraseña y acceso al usuario admin.
+
+<div style="height: 5px;"></div>
+
+- Hago un cat a Dockerfile y veo la dirección de la flag:
+
+<div style="height: 5px;"></div>
+
+- Veo el código y la flag esta en flags.txt:
+    ![Test Relative Image](./imagen8.png)
+
+<div style="height: 5px;"></div>
+
+- Veo que hay una sección de introducir un pedido:
+    ![Test Relative Image](./imagen9.png)
+
+<div style="height: 5px;"></div>
+
+- Pruebo meter un pedido y no pasa nada:
+    ![Test Relative Image](./imagen10.png)
+
+<div style="height: 5px;"></div>
+
+- Reviso y veo que en la zona de notas pide markdown y al revisar el codigo veo:
+    ![Test Relative Image](./imagen11.png)
+    
+<div style="height: 5px;"></div>
+
+- Veo que en content.renplace te deja introducir un comando que se ![texto] (texto)
+
+<div style="height: 5px;"></div>
+
+- Te dice además q uses img y que te va devolver un base64 embebido en un embedded image. 
+
+<div style="height: 5px;"></div>
+
+- Entonces veo si así puedo conseguir algo:
+    Pruebo:
+    ![Test Relative Image](./imagen12.png)
+
+<div style="height: 5px;"></div>
+
+- Que me da como respuesta:
+    ![Test Relative Image](./imagen13.png)
+
+<div style="height: 5px;"></div>
+
+- Aplico un Ctrl + Shift + C sobre la imagen embebida:
+    ![Test Relative Image](./imagen14.png)
+
+<div style="height: 5px;"></div>
+
+- Veo el codigo:
+    ![Test Relative Image](./imagen15.png)
+
+<div style="height: 5px;"></div>
+
+- Descomprimo:
+    ![Test Relative Image](./imagen16.png)
+
+<div style="height: 5px;"></div>
+
+- Al ver que si funciona pruebo con la localizacion de la flag que vi:
+    ![Test Relative Image](./imagen17.png)
+
+<div style="height: 5px;"></div>
+
+- Que me da como respuesta:
+    ![Test Relative Image](./imagen18.png)
+
+<div style="height: 5px;"></div>
+
+- Aplico un Ctrl + Shift + C sobre la imagen embebida:
+    ![Test Relative Image](./imagen19.png)
+
+<div style="height: 5px;"></div>
+
+- Veo que me da un codigo en base 64:
+    ![Test Relative Image](./imagen20.png)
+
+<div style="height: 5px;"></div>
+
+- Le hago un echo y consigo la flag:
+    ![Test Relative Image](./imagen21.png)

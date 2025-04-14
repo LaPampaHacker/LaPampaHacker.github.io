@@ -2,7 +2,7 @@
 title: "HackTheBox - Challenge Alphascii Clashing"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
 date: "2025-04-07"
-draft: false
+draft: true
 tags:
 - Tutorial
 - HackTheBox
