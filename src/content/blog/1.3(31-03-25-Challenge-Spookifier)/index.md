@@ -36,7 +36,7 @@ tags:
 ```js
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge]
 └─# ls
-crypto_alphascii_clashing  plasma  rev_graverobber  rev_spookypass  web_armaxis  web_spookifier
+crypto_alphascii_clashing  plasma  rev_graverobber  rev_spookypass   web_spookifier
                                                                                                                              
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge]
 └─# cd web_spookifier

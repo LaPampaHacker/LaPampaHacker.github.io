@@ -53,13 +53,12 @@ You're not a real ghost; clear off!
 └─# ltrace ./pass
 puts("Welcome to the \033[1;3mSPOOKIEST\033["...Welcome to the SPOOKIEST party of the year.
 )                                                                                 = 54
-printf("Before we let you in, you'll nee"...)                                                                                     = 59
+printf("Before we let you in, you'll nee"...)                                     = 59
 fgets(Before we let you in, you'll need to give us the password: hola
 "hola\n", 128, 0x7f4d7b9538e0)                                                                                              = 0x7fff1d5edcb0
-strchr("hola\n" '\n')                                                                                                            = "\n"
-strcmp("hola" "s3cr3t_p455_f0r_gh05t5_4nd_gh0ul"...)                                                                             = -11
-puts("You're not a real ghost; clear o"...You're not a real ghost; clear off!
-)                                                                                       = 36
+strchr("hola\n" '\n')                                                             = "\n"
+strcmp("hola" "s3cr3t_p455_f0r_gh05t5_4nd_gh0ul"...)                              = -11
+puts("You're not a real ghost; clear o"...You're not a real ghost; clear off!)    = 36
 +++ exited (status 0) +++
 ```
 
@@ -72,7 +71,7 @@ puts("You're not a real ghost; clear o"...You're not a real ghost; clear off!
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/rev_spookypass]
 └─# ./pass       
 Welcome to the SPOOKIEST party of the year.
-Before we let you in, you'll need to give us the password: s3cr3t_p455_f0r_gh05t5_4nd_gh0ul
+Before we let you in, you'll need to give us the password:s3cr3t_p455_f0r_gh05t5_4nd_gh0ul
 You're not a real ghost; clear off!
 ```
 

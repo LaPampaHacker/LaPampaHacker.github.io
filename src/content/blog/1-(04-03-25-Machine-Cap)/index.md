@@ -36,15 +36,15 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
     es algo mas sigiloso solamente para ver cuales estan abiertos:
 ```js
 ❯ cat allPorts
-───────┬──────────────────────────────────────────────────────────────────────────────────────────────
+───────┬───────────────────────────────────────────────────────────────────────────────────
        │ File: allPorts
-───────┼──────────────────────────────────────────────────────────────────────────────────────────────
+───────┼───────────────────────────────────────────────────────────────────────────────────
    1   │ # nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oG allPorts 10.10.10.245
    2   │ # Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
    3   │ Host: 10.10.10.245 ()   Status: Up
-   4   │ Host: 10.10.10.245 ()   Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///
-   5   │ # Nmap done at Tue Mar  4 19:18:09 2025 -- 1 IP address (1 host up) scanned in 25.62 seconds
-───────┴──────────────────────────────────────────────────────────────────────────────────────────────
+   4   │ Host: 10.10.10.245 ()   Ports: 21/open/tcp/ftp, 22/open/tcp/ssh, 80/open/tcp/http
+   5   │ # Nmap done at 19:18:09 2025 -- 1 IP address (1 host up) scanned in 25.62 seconds
+───────┴───────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -52,9 +52,9 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
 - Y el segundo es mas agresivo para ver las versiones:
 ```js
 ❯ cat targeted
-───────┬──────────────────────────────────────────────────────────────────────────────────────────────
+───────┬───────────────────────────────────────────────────────────────────────────────────
        │ File: targeted
-───────┼──────────────────────────────────────────────────────────────────────────────────────────────
+───────┼───────────────────────────────────────────────────────────────────────────────────
    1   │ # nmap -sCV -p21,22,80 -oN targeted 10.10.10.245
    2   │ Nmap scan report for 10.10.10.245
    3   │ Host is up (1.5s latency).
@@ -84,7 +84,7 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
   27   │ |     <meta http-equiv="x-ua-compatible" content="ie=edge">
   28   │ |     <title>Security Dashboard</title>
   29   │ |     <meta name="viewport" content="width=device-width, initial-scale=1">
-  30   │ |     <link rel="shortcut icon" type="image/png" href="/static/images/icon/favicon.ico">
+  30   │ |     <link rel="shortcut icon" type="image/png" href="/static/images/icon">
   31   │ |     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
   32   │ |     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
   33   │ |     <link rel="stylesheet" href="/static/css/themify-icons.css">
@@ -100,8 +100,8 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
   43   │ |     Content-Type: text/html; charset=utf-8
   44   │ |     Allow: OPTIONS, GET, HEAD
   45   │ |_    Content-Length: 0
-  46   │ 1 service unrecognized despite returning data. If you know the service/version, please submit 
-       │   the following fingerprint at https://nmap.org/cgi-bin/submit.
+  46   │ 1 service unrecognized despite returning data. If you know the service/version,
+       │   please submit the following fingerprint at https://nmap.org/cgi-bin/submit.
        │ cgi?new-service :
   47   │ SF-Port80-TCP:V=7.94SVN%I=7%D=3/4%Time=67C77D6D%P=x86_64-pc-linux-gnu%r(Ge
   48   │ SF:tRequest,2A0C,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x
@@ -127,10 +127,10 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
   68   │ SF:ent-Type:\x20text/html;\x20charset=utf-8\r\nAllow:\x20OPTIONS,\x20GET,\
   69   │ SF:x20HEAD\r\nContent-Length:\x200\r\n\r\n");
   70   │ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-  71   │ 
-  72   │ Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-  73   │ # Nmap done at Tue Mar  4 19:24:50 2025 -- 1 IP address (1 host up) scanned in 83.82 seconds
-───────┴───────────────────────────────────────────────────────────────────────────────────────────────
+  71   │ Service detection performed.
+  72   │ Please report any incorrect results at https://nmap.org/submit/ .
+  73   │ # Nmap done at 19:24:50 2025 -- 1 IP address (1 host up) scanned in 83.82 seconds
+───────┴───────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -138,9 +138,9 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
 - Hago un análisis de la web:
 ```js
 ❯ cat webScan
-───────┬──────────────────────────────────────────────────────────────────────────────────────────────
+───────┬───────────────────────────────────────────────────────────────────────────────────
        │ File: webScan
-───────┼──────────────────────────────────────────────────────────────────────────────────────────────
+───────┼───────────────────────────────────────────────────────────────────────────────────
    1   │ # nmap --script http-enum -p80 -oN webScan 10.10.10.245
    2   │ Nmap scan report for 10.10.10.245
    3   │ Host is up (1.7s latency).
@@ -148,8 +148,8 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
    5   │ PORT   STATE SERVICE
    6   │ 80/tcp open  http
    7   │ 
-   8   │ # Nmap done at Tue Mar  4 19:36:51 2025 -- 1 IP address (1 host up) scanned in 106.72 seconds
-───────┴──────────────────────────────────────────────────────────────────────────────────────────────
+   8   │ # Nmap done at 19:36:51 2025 -- 1 IP address (1 host up) scanned in 106.72 seconds
+───────┴───────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -185,8 +185,8 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <title>404 Not Found</title>
 <h1>Not Found</h1>
-<p>The requested URL was not found on the server. If you entered the URL manually please check your 
-spelling and try again.</p>
+<p>The requested URL was not found on the server. If you entered the URL manually please 
+check your spelling and try again.</p>
 220 (vsFTPd 3.0.3)
 USER nathan
 331 Please specify the password.
@@ -230,11 +230,11 @@ QUIT
 - Dentro del Archivo encontramos en hash del user:
 ```bash
 ❯ cat user.txt
-───────┬─────────────────────────────────
+───────┬───────────────────────────────────────────────────────────────────────────────────
        │ File: user.txt
-───────┼─────────────────────────────────
+───────┼───────────────────────────────────────────────────────────────────────────────────
    1   │ 8a217d80d767aa5489d69a33ed4af1e2
-───────┴─────────────────────────────────
+───────┴───────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -303,17 +303,3 @@ nathan@cap:~$ /usr/bin/python3.8
 
 - Y finalmente:
 ![Test Relative Image](./imagen24.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
