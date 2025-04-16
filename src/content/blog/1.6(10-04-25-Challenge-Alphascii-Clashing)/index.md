@@ -52,7 +52,7 @@ def main():
                     if usr == db_user:
                         print(f'[+] welcome, {usr} 🤖!')
                     else:
-                        print(f"[+] what?! this was unexpected. shutting down the system :: 
+                        print(f"[+] what?! this was unexpected.shutting down the system::
                         {open('flag.txt').read()} 👽")
                         exit()
                     break

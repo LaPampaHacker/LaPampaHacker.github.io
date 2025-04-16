@@ -51,11 +51,11 @@ You're not a real ghost; clear off!
 ```js
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/rev_spookypass]
 └─# ltrace ./pass
-puts("Welcome to the \033[1;3mSPOOKIEST\033["...Welcome to the SPOOKIEST party of the year.
+puts("Welcome to the \033[1;3mSPOOKIEST\033["..Welcome to the SPOOKIEST party of the year
 )                                                                                 = 54
 printf("Before we let you in, you'll nee"...)                                     = 59
 fgets(Before we let you in, you'll need to give us the password: hola
-"hola\n", 128, 0x7f4d7b9538e0)                                                                                              = 0x7fff1d5edcb0
+"hola\n", 128, 0x7f4d7b9538e0)                                           = 0x7fff1d5edcb0
 strchr("hola\n" '\n')                                                             = "\n"
 strcmp("hola" "s3cr3t_p455_f0r_gh05t5_4nd_gh0ul"...)                              = -11
 puts("You're not a real ghost; clear o"...You're not a real ghost; clear off!)    = 36
@@ -175,7 +175,7 @@ _init
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/rev_spookypass]
 └─# ./pass       
 Welcome to the SPOOKIEST party of the year.
-Before we let you in, you'll need to give us the password: s3cr3t_p455_f0r_gh05t5_4nd_gh0ul5
+Before we let youin,you'llneed to give us the password: s3cr3t_p455_f0r_gh05t5_4nd_gh0ul5
 Welcome inside!
 HTB{un0bfu5c4t3d_5tr1ng5}
 ```

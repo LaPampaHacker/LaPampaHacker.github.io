@@ -36,15 +36,15 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
     es algo mas sigiloso solamente para ver cuales estan abiertos:
 ```js
 ❯ cat allPorts
-───────┬───────────────────────────────────────────────────────────────────────────────────
+───────┬─────────────────────────────────────────────────────────────────────────────────
        │ File: allPorts
-───────┼───────────────────────────────────────────────────────────────────────────────────
+───────┼─────────────────────────────────────────────────────────────────────────────────
    1   │ # nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oG allPorts 10.10.10.245
    2   │ # Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-   3   │ Host: 10.10.10.245 ()   Status: Up
-   4   │ Host: 10.10.10.245 ()   Ports: 21/open/tcp/ftp, 22/open/tcp/ssh, 80/open/tcp/http
-   5   │ # Nmap done at 19:18:09 2025 -- 1 IP address (1 host up) scanned in 25.62 seconds
-───────┴───────────────────────────────────────────────────────────────────────────────────
+   3   │ Host: 10.10.10.245 ()  Status: Up
+   4   │ Host: 10.10.10.245 ()  Ports: 21/open/tcp/ftp, 22/open/tcp/ssh, 80/open/tcp/http
+   5   │ # Nmap done at 19:18:09 -- 1 IP address (1 host up) scanned in 25.62 seconds
+───────┴─────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -52,16 +52,16 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
 - Y el segundo es mas agresivo para ver las versiones:
 ```js
 ❯ cat targeted
-───────┬───────────────────────────────────────────────────────────────────────────────────
+───────┬─────────────────────────────────────────────────────────────────────────────────
        │ File: targeted
-───────┼───────────────────────────────────────────────────────────────────────────────────
+───────┼─────────────────────────────────────────────────────────────────────────────────
    1   │ # nmap -sCV -p21,22,80 -oN targeted 10.10.10.245
    2   │ Nmap scan report for 10.10.10.245
    3   │ Host is up (1.5s latency).
    4   │ 
    5   │ PORT   STATE SERVICE VERSION
-   6   │ 21/tcp open  ftp     vsftpd 3.0.3
-   7   │ 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+   6   │ 21/tcp open  ftp   vsftpd 3.0.3
+   7   │ 22/tcp open  ssh   OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
    8   │ | ssh-hostkey: 
    9   │ |   3072 fa:80:a9:b2:ca:3b:88:69:a4:28:9e:39:0d:27:d5:75 (RSA)
   10   │ |   256 96:d8:f8:e3:e8:f7:71:36:c5:49:d5:9d:b6:a4:c9:0c (ECDSA)
@@ -129,8 +129,8 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
   70   │ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
   71   │ Service detection performed.
   72   │ Please report any incorrect results at https://nmap.org/submit/ .
-  73   │ # Nmap done at 19:24:50 2025 -- 1 IP address (1 host up) scanned in 83.82 seconds
-───────┴───────────────────────────────────────────────────────────────────────────────────
+  73   │ # Nmap done at 19:24:50 -- 1 IP address (1 host up) scanned in 83.82 seconds
+───────┴─────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -138,9 +138,9 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
 - Hago un análisis de la web:
 ```js
 ❯ cat webScan
-───────┬───────────────────────────────────────────────────────────────────────────────────
+───────┬─────────────────────────────────────────────────────────────────────────────────
        │ File: webScan
-───────┼───────────────────────────────────────────────────────────────────────────────────
+───────┼─────────────────────────────────────────────────────────────────────────────────
    1   │ # nmap --script http-enum -p80 -oN webScan 10.10.10.245
    2   │ Nmap scan report for 10.10.10.245
    3   │ Host is up (1.7s latency).
@@ -148,8 +148,8 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
    5   │ PORT   STATE SERVICE
    6   │ 80/tcp open  http
    7   │ 
-   8   │ # Nmap done at 19:36:51 2025 -- 1 IP address (1 host up) scanned in 106.72 seconds
-───────┴───────────────────────────────────────────────────────────────────────────────────
+   8   │ # Nmap done at 19:36:51 -- 1 IP address (1 host up) scanned in 106.72 seconds
+───────┴─────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>
@@ -185,7 +185,7 @@ rtt min/avg/max/mdev = 190.526/190.526/190.526/0.000 ms
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <title>404 Not Found</title>
 <h1>Not Found</h1>
-<p>The requested URL was not found on the server. If you entered the URL manually please 
+<p>The requested URL was not found on the server. If you entered the URL manually please
 check your spelling and try again.</p>
 220 (vsFTPd 3.0.3)
 USER nathan
@@ -230,11 +230,11 @@ QUIT
 - Dentro del Archivo encontramos en hash del user:
 ```bash
 ❯ cat user.txt
-───────┬───────────────────────────────────────────────────────────────────────────────────
+───────┬─────────────────────────────────────────────────────────────────────────────────
        │ File: user.txt
-───────┼───────────────────────────────────────────────────────────────────────────────────
+───────┼─────────────────────────────────────────────────────────────────────────────────
    1   │ 8a217d80d767aa5489d69a33ed4af1e2
-───────┴───────────────────────────────────────────────────────────────────────────────────
+───────┴─────────────────────────────────────────────────────────────────────────────────
 ```
 
 <div style="height: 5px;"></div>

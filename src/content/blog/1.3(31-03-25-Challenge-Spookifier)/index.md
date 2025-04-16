@@ -37,10 +37,10 @@ tags:
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge]
 └─# ls
 crypto_alphascii_clashing  plasma  rev_graverobber  rev_spookypass   web_spookifier
-                                                                                                                             
+                            
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge]
 └─# cd web_spookifier
-                                                                                                             
+                                                                            
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/web_spookifier]
 └─# ls
 build-docker.sh  challenge  config  Dockerfile  flag.txt
