@@ -88,7 +88,34 @@ tags:
 <div style="height: 5px;"></div>
 
 - Reviso y veo que en la zona de notas pide markdown y al revisar el codigo veo:
-    ![Test Relative Image](./imagen11.png)
+```js
+┌──(root㉿kali)-[/home/…/HTB/Challenge/web_armaxis/challenge]
+└─# cat markdown.js
+const MarkdownIt = require('markdown-it');
+const { execSync } = require('child_process');
+
+const md = new MarkdownIt({
+    html: true,
+});
+
+function parseMarkdown(content) {
+    if (!content) return '';
+    return md.render(
+        content.replace(/\!\[.*?\]\((.*?)\)/g, (match, url) => {
+            try {
+                const fileContent = execSync(`curl -s ${url}`);
+                const base64Content = Buffer.from(fileContent).toString('base64');
+                return `<img src="data:image/*;base64,${base64Content}" alt="Embedded Image">`;
+            } catch (err) {
+                console.error(`Error fetching image from URL ${url}:`, err.message);
+                return `<p>Error loading image: ${url}</p>`;
+            }
+        })
+    );
+}
+
+module.exports = { parseMarkdown };
+```
     
 <div style="height: 5px;"></div>
 
@@ -147,4 +174,8 @@ tags:
 <div style="height: 5px;"></div>
 
 - Le hago un echo y consigo la flag:
-    ![Test Relative Image](./imagen21.png)
+```js
+┌──(root㉿kali)-[/home/…/HTB/Challenge/web_armaxis/challenge]
+└─# echo -n "SFRCe200cmtkMHduX2JIZ3NfMW5fdGgzX3cxbGQhfQo=" | base64 -d
+HTB{m4rkd0wn_bHgs_1n_th3_w1ld!}
+```

@@ -33,12 +33,58 @@ tags:
 <div style="height: 5px;"></div>
 
 - Entro al archivo y empiezo a mirar:
-    ![Test Relative Image](./imagen3.png)
+```js
+┌──(root㉿kali)-[/home/joaquin/HTB/Challenge]
+└─# ls
+crypto_alphascii_clashing  plasma  rev_graverobber  rev_spookypass  web_armaxis  web_spookifier
+                                                                                                                             
+┌──(root㉿kali)-[/home/joaquin/HTB/Challenge]
+└─# cd web_spookifier
+                                                                                                             
+┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/web_spookifier]
+└─# ls
+build-docker.sh  challenge  config  Dockerfile  flag.txt
+```
 
 <div style="height: 5px;"></div>
 
 - En dockerfile veo que me dice que la flag esta en el directorio /flag.txt:
-    ![Test Relative Image](./imagen4.png)
+```js
+┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/web_spookifier]
+└─# cat Dockerfile   
+FROM python:3.8-alpine
+
+RUN apk add --no-cache --update supervisor gcc
+# Upgrade pip
+RUN python -m pip install --upgrade pip
+
+# Install dependencies
+RUN pip install Flask==2.0.0 mako flask_mako Werkzeug==2.0.0
+
+# Copy flag
+COPY flag.txt /flag.txt
+
+# Setup app
+RUN mkdir -p /app
+
+# Switch working environment
+WORKDIR /app
+
+# Add application
+COPY challenge .
+
+# Setup supervisor
+COPY config/supervisord.conf /etc/supervisord.conf
+
+# Expose port the server is reachable on
+EXPOSE 1337
+
+# Disable pycache
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# start supervisord
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"] 
+```
 
 <div style="height: 5px;"></div>
 

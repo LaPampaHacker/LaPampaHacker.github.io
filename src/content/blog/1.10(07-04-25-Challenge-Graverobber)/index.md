@@ -29,7 +29,9 @@ tags:
 ```js
 ┌──(root㉿kali)-[/home/joaquin/HTB/Challenge/rev_graverobber]
 └─# radare2 ./robber
-WARN: Relocs has not been applied. Please use `-e bin.relocs.apply=true` or `-e bin.cache=true` next time
+WARN: Relocs has not been applied. Please use `-e bin.relocs.apply=true` or 
+`-e bin.cache=true` next time
+
 [0x00001060]> aaa
 INFO: Analyze all flags starting with sym. and entry0 (aa)
 INFO: Analyze imports (af@@@i)
@@ -137,7 +139,7 @@ INFO: Use -AA or aaaa to perform additional experimental analysis
 
 <div style="height: 5px;"></div>
 
-- Y encontre la flag:
+- Y encontre la flag en la linea '0x000011d6':
 ```js
-"HTB{br34k1n9_d0wn_th3_sysc4ll5}"
+488d05632e.. lea rax, obj.parts ;0x4040;U"HTB{br34k1n9_d0wn_th3_sysc4ll5}"
 ```
