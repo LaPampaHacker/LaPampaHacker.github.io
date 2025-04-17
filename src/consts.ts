@@ -21,7 +21,7 @@ export const BLOG: Page = {
 
 // Projects Page 
 export const PROJECTS: Page = {
-  TITLE: "Projects",
+  TITLE: "Publicaciones",
   DESCRIPTION: "Recent projects I have worked on.",
 }
 
@@ -46,7 +46,7 @@ export const LINKS: Links = [
     HREF: "/blog", 
   },
   { 
-    TEXT: "Proyectos", 
+    TEXT: "Publicaciones", 
     HREF: "/projects", 
   },
 ]
