@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Challenge WayWitch"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo el challenge:"
-date: "2025-04-12"
+date: "2025-04-10"
 draft: true
 tags:
 - Tutorial

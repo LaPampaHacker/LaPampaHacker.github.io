@@ -1,7 +1,7 @@
 ---
 title: "HackTheBox - Machine Instant"
 summary: "Vamos a ver el paso a paso detallado de como ir resolviendo la maquina:"
-date: "2025-04-13"
+date: "2025-04-16"
 draft: true
 tags:
 - Tutorial

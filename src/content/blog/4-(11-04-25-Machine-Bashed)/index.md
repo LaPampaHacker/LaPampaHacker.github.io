@@ -1,6 +1,6 @@
 ---
 title: "Machine Bashed"
-date: "2025-04-11"
+date: "2025-04-13"
 summary: "Resolución paso a paso de la máquina Bashed"
 draft: true
 tags: 

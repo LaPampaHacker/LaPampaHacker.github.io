@@ -1,6 +1,6 @@
 ---
 title: "Machine Mirai"
-date: "2025-04-09"
+date: "2025-04-12"
 summary: "Resolución paso a paso de la máquina Mirai"
 draft: true
 tags: 

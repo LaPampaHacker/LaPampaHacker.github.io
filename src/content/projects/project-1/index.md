@@ -263,7 +263,7 @@ Al final de la publicacion encontraras unos comando que son los que se usan para
 
 93. nmap -sU -p 53 192.168.1.1 — Realiza un escaneo del puerto 53 en la dirección IP 192.168.1.1, generalmente utilizado para servicios DNS a través de UDP.
 
-94. nmap -sV -p 80,443 --script http-enum 192.168.1.1 — Escanea los puertos 80 (HTTP) y 443 (HTTPS) en la IP 192.168.1.1 e identifica las versiones de los servicios, además ejecuta el script http-enum para enumerar servicios web
+94. nmap -sV -p 80,443 --script http-enum 192.168.1.1 — Escanea los puertos 80 (HTTP) y 443 (HTTPS) en la IP 192.168.1.1 e identifica las versiones de los servicios, además ejecuta el script http-enum para enumerar servicios web.
 
 95. nmap -p- -T5 192.168.1.1 — Realiza un escaneo completo de todos los puertos (-p-) en la IP 192.168.1.1 con un modo muy agresivo y rápido (-T5).
 
@@ -283,7 +283,7 @@ Al final de la publicacion encontraras unos comando que son los que se usan para
 
 103. nmap --script firewall-bypass -T4 192.168.1.1 — Ejecuta un escaneo con el script firewall-bypass para intentar evadir un firewall en la dirección IP 192.168.1.1, con una velocidad rápida (-T4).
 
-104.nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oG allPorts 10.10.10.245 — Escanea todos los puertos de la IP 10.10.10.245, mostrando solo los puertos abiertos. Utiliza un escaneo SYN ("stealth"), con una velocidad mínima de 5000 paquetes por segundo. La salida es detallada y no se resuelven nombres DNS ni se realiza un ping previo a los hosts. Los resultados se guardan en formato "grepable" en el archivo allPorts
+104. nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oG allPorts 10.10.10.245 — Escanea todos los puertos de la IP 10.10.10.245, mostrando solo los puertos abiertos. Utiliza un escaneo SYN ("stealth"), con una velocidad mínima de 5000 paquetes por segundo. La salida es detallada y no se resuelven nombres DNS ni se realiza un ping previo a los hosts. Los resultados se guardan en formato "grepable" en el archivo allPorts
 
 105. nmap -sCV -p21,22,80 -oN targeted 10.10.10.245 — Realiza un escaneo en los puertos 21 (FTP), 22 (SSH) y 80 (HTTP) de la dirección IP 10.10.10.245, ejecutando scripts para obtener información sobre los servicios y versiones. Los resultados se guardan en un archivo denominado targeted en formato legible.
 ```
