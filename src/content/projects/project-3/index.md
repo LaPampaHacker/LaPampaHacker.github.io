@@ -2,7 +2,7 @@
 title: "Project Three"
 summary: "Lorem ipsum dolor sit amet"
 date: "Mar 16 2022"
-draft: true
+draft: false
 tags:
 - Vue
 - Javascript
