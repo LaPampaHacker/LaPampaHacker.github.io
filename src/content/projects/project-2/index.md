@@ -96,32 +96,32 @@ Esta herramienta es especialmente útil para analistas de ciberseguridad, invest
 <div style="height: 5px;"></div>
 
 1. Búsqueda básica de un nombre de usuario:
-```js
+```bash
 sherlock juanperez
 ```
 
 2. Búsqueda de múltiples usuarios:
-```js
+```bash
 sherlock juanperez mariagomez hacker_anon
 ```
 
 3. Guardar resultados en un archivo de texto:
-```js
+```bash
 sherlock juanperez --output juanperez_resultados.txt
 ```
 
 4. Usar proxy para ocultar IP:
-```js
+```bash
 sherlock juanperez --proxy "socks5://127.0.0.1:9050"
 ```
 
 5. Buscar en un conjunto limitado de sitios:
-```js
+```bash
 sherlock juanperez --site facebook twitter instagram
 ```
 
 6. Ejecutar con múltiples hilos para mayor velocidad:
-```js
+```bash
 sherlock juanperez --timeout 10 --print-found
 ```
 
@@ -136,26 +136,78 @@ Desarrollada en Python, Maigret se destaca por ofrecer mayor cobertura que Sherl
 <div style="height: 5px;"></div>
 
 1. Búsqueda básica:
-```js
+```bash
 maigret juanperez
 ```
 
 2. Exportar resultados en PDF
-```js
+```bash
 maigret juanperez --pdf
 ```
 
 3. Usar con proxies
-```js
+```bash
 maigret juanperez --proxy socks5://127.0.0.1:9050
 ```
 
 4. Limitar la búsqueda a sitios relevantes
-```js
+```bash
 maigret juanperez -s facebook twitter instagram
 ```
 
 5. Exportar en múltiples formatos
-```js
+```bash
 maigret juanperez --json --csv --html
 ```
+
+<div style="height: 10px;"></div>
+
+## Ademas otra para numeros de telefono es el bot de telegram @TrueCaller_Z_Bot
+
+El Bot de Truecaller es una herramienta automatizada diseñada para identificar información asociada a números telefónicos desconocidos. Al enviar un número al bot, el usuario recibe de forma instantánea datos clave como el nombre del titular, el operador de telefonía y la región geográfica asociada al número.
+
+Esta solución es ideal para:
+
+Detectar llamadas no deseadas o spam.
+
+Verificar la identidad de contactos desconocidos.
+
+Aumentar la seguridad en las comunicaciones.
+
+Características principales:
+
+Consulta rápida y en tiempo real.
+
+Interfaz sencilla a través de Telegram.
+
+Respuestas automatizadas y precisas.
+
+Funcionalidad gratuita y sin complicaciones.
+
+Es una herramienta útil tanto para uso personal como profesional, especialmente en contextos donde la validación de contactos es fundamental.
+
+Link: https://t.me/true_caller
+
+¿Alguna vez te has preguntado quién está detrás de un número desconocido? Ahora, con nuestro Bot de Truecaller, ¡puedes descubrirlo fácilmente! Solo tienes que enviar un número de teléfono al bot y recibirás al instante información como:
+
+📛 Nombre
+
+📞 Operador
+
+🌍 Región
+
+Es rápido, seguro y muy fácil de usar. Ya sea que enfrentes llamadas spam o simplemente tengas curiosidad, ¡nuestro bot te cubre las espaldas!
+
+
+<div style="height: 10px;"></div>
+
+## Para corroborar filtraciones de datos podes usar
+
+https://intelx.io/ : Motores de búsqueda OSINT para correos, leaks, números, IPs, etc.
+
+https://haveibeenpwned.com/ : Verifica si un correo electrónico ha estado involucrado en filtraciones de datos.
+
+
+
+
+
