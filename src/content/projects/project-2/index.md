@@ -1,5 +1,5 @@
 ---
-title: "Tecnicas de REcopilacion de Informacion"
+title: "Tecnicas de Recopilacion de Informacion"
 summary: "Te comparto una guía visual y práctica donde vamos a aprender a recopilar informacion de personas conm OSINT"
 date: "2025-04-22"
 draft: false
@@ -14,7 +14,7 @@ En el ámbito de la ciberseguridad, la capacidad de recolectar información de m
 
 <div style="height: 10px;"></div>
 
-### Google dorks
+### Google dorks:
 
 Google no es solo una herramienta para buscar recetas o noticias. Cuando se usa con precisión, puede convertirse en una poderosa fuente de inteligencia. En esta guía visual y práctica, aprenderás a utilizar Google Dorks, una técnica basada en operadores avanzados de búsqueda, que permite descubrir información sensible expuesta en internet. Estos operadores son clave en investigaciones OSINT, auditorías de seguridad y análisis de superficie de ataque.
 
@@ -87,7 +87,7 @@ A continuación, te comparto una tabla con los operadores más utilizados, su fu
 
 <div style="height: 10px;"></div>
 
-## Ademas hay otras herramientas como sherlock
+## Ademas hay otras herramientas como sherlock:
 
 Sherlock es una herramienta de código abierto utilizada en investigaciones OSINT para buscar nombres de usuario en múltiples plataformas en línea. Su objetivo principal es detectar la presencia de un perfil específico en redes sociales, foros y otros servicios web, lo que permite trazar una huella digital de una persona.
 
@@ -127,7 +127,7 @@ sherlock juanperez --timeout 10 --print-found
 
 <div style="height: 10px;"></div>
 
-## Ademas otra mas potente pero mas lenta es Maigret
+## Ademas otra mas potente pero mas lenta es Maigret:
 
 Maigret es una herramienta OSINT de código abierto similar a Sherlock, diseñada para buscar perfiles de usuario en más de 2.500 sitios web y servicios en línea, incluyendo redes sociales, plataformas de desarrollo, foros y más. Su objetivo es identificar la presencia digital de una persona a partir de su nombre de usuario o alias.
 
@@ -162,27 +162,31 @@ maigret juanperez --json --csv --html
 
 <div style="height: 10px;"></div>
 
-## Ademas otra para numeros de telefono es el bot de telegram @TrueCaller_Z_Bot
+## Ademas otra para numeros de telefono es el bot de telegram @TrueCaller_Z_Bot:
 
 El Bot de Truecaller es una herramienta automatizada diseñada para identificar información asociada a números telefónicos desconocidos. Al enviar un número al bot, el usuario recibe de forma instantánea datos clave como el nombre del titular, el operador de telefonía y la región geográfica asociada al número.
 
-Esta solución es ideal para:
+# Esta solución es ideal para:
 
-Detectar llamadas no deseadas o spam.
+• Detectar llamadas no deseadas o spam.
 
-Verificar la identidad de contactos desconocidos.
+• Verificar la identidad de contactos desconocidos.
 
-Aumentar la seguridad en las comunicaciones.
+• Aumentar la seguridad en las comunicaciones.
 
-Características principales:
+<div style="height: 5px;"></div>
 
-Consulta rápida y en tiempo real.
+# Características principales:
 
-Interfaz sencilla a través de Telegram.
+• Consulta rápida y en tiempo real.
 
-Respuestas automatizadas y precisas.
+• Interfaz sencilla a través de Telegram.
 
-Funcionalidad gratuita y sin complicaciones.
+• Respuestas automatizadas y precisas.
+
+• Funcionalidad gratuita y sin complicaciones.
+
+<div style="height: 5px;"></div>
 
 Es una herramienta útil tanto para uso personal como profesional, especialmente en contextos donde la validación de contactos es fundamental.
 
@@ -201,7 +205,7 @@ Es rápido, seguro y muy fácil de usar. Ya sea que enfrentes llamadas spam o si
 
 <div style="height: 10px;"></div>
 
-## Para corroborar filtraciones de datos podes usar
+## Para corroborar filtraciones de datos podes usar:
 
 https://intelx.io/ : Motores de búsqueda OSINT para correos, leaks, números, IPs, etc.
 
